@@ -11,44 +11,21 @@
 
 .. _chapter-overview:
 
-.. only:: html
-
-    .. admonition:: This is a document template
-        :class: tip
-
-        Replace the ``<placeholders>`` and the *lorem ipsum* text throughout with
-        your own content. This landing page is the document's front matter:
-
-        * **Abstract**, **History**, **Authors**, **Keywords** and **Foreword**
-          are standard front-matter sections — keep them and fill them in.
-        * **Chapters 1–4** demonstrate the authoring system (text, figures,
-          tables, diagrams, and API references). Read them, then replace their
-          content with your specification.
-
-        This notice appears on the web version only; it is excluded from the
-        published PDF. See the project ``CONTRIBUTING`` guide for how to build and publish.
-
-Title of this document
-========================
+Attestation Results at the commitment point
+===========================================
 
 .. only:: html
 
-    **<subtitle of this document>**
+    **Proposed text for FG-TIDA WG1 Deliverable 2**
 
 .. raw:: latex
 
-    \begin{center}\textbf{<subtitle of this document>}\end{center}
+    \begin{center}\textbf{Proposed text for FG-TIDA WG1 Deliverable 2}\end{center}
 
 Abstract
 --------
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
+Before a service commits something it cannot take back on an AI agent's instruction (cost, a payment, a secret or access to a production system), it needs to know what the agent is executing at that moment, which its last appraisal may no longer show. RFC 9334 separates when a claim's value was generated from when the Relying Party performs the operation, and AR4SI leaves the expiry of individual Trustworthiness Claims undefined. This contribution proposes text for WG1 Deliverable 2 on that moment, the commitment point: a declared freshness deadline, a measurement age per required aspect carried in the Attestation Result, age rules for evidence measured before use or only at launch, and negative tests in which only the appraisal separates two builds, with the measurement of context and memory left to Deliverable 2. Annex C shows how it combines with the timeliness requirements of contribution 12, and Annex D notes binding and disclosure points for other clauses. It defines no protocol or format.
 
 History
 -------
@@ -62,15 +39,15 @@ History
       - Approval
       - Focus Group
       - Working Group
-    * - <version>
-      - <title>
-      - <date>
+    * - 0.0
+      - Attestation Results at the commitment point
+      - Not yet adopted
       - TIDA
-      - <acronym>
+      - CDRA
 
 To access this Document as a PDF, open the published documentation site in your web
 browser and click the PDF download link, or navigate directly to
-https://debora-com.github.io/CUTEspecs/specification.pdf.
+https://kingyewchoo.github.io/attestation-results-at-the-commitment-point/specification.pdf.
 
 Authors
 -------
@@ -82,17 +59,14 @@ Authors
     * - Name
       - Affiliation
       - Contact
-    * - <Jane Doe>
-      - <Organization / Company>
-      - <jane.doe@example.com>
-    * - <John Smith>
-      - <Organization / Company>
-      - <john.smith@example.com>
+    * - King Yew Choo (proposed editor)
+      - True Primary
+      - k.choo@trueprimary.com
 
 Keywords
 --------
 
-Lorem, ipsum, dolor, consectetur, adipiscing.
+Remote attestation, Attestation Results, freshness, measurement age, commitment point, Relying Party, AR4SI, disclosure.
 
 .. raw:: latex
 
@@ -129,14 +103,7 @@ please refer to the community's published resources.
 Note
 ----
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-voluptatem accusantium doloremque laudantium.
+This draft proposes input to the WG1 Deliverable 2 outline: requirements for the clause on when fresh Evidence is due and how long Attestation Results stay valid, with Annex D's notes on binding and disclosure for other clauses; the section Requested decision and milestones states the decision requested.
 
 .. Intellectual Property Rights — section commented out. To restore it, remove the
    leading ".." and the indentation below, and re-add a ".. raw:: latex" block with
@@ -180,10 +147,14 @@ voluptatem accusantium doloremque laudantium.
     :numbered:
     :hidden:
 
-    chapters/01_chapter1
-    chapters/02_chapter2
-    chapters/03_chapter3
-    chapters/04_chapter4/index
-    chapters/05_annex/index
-    chapters/06_appendix/index
-    chapters/07_references
+    chapters/01_proposal
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+
+    chapters/02_annex_a
+    chapters/03_annex_b
+    chapters/04_annex_c
+    chapters/05_annex_d
+    chapters/06_references
