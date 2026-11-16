@@ -22,7 +22,7 @@ Anything you contribute is offered as input to the Working Group's work and may 
 | Acronym | commitment-point |
 | Authors | King Yew Choo (True Primary), proposed editor |
 | Working Group | WG1, Continuous and Dynamic Remote Attestation for Agentic AI (CDRA), as declared target |
-| DataTracker record | Added once assigned |
+| DataTracker record | [Contribution 15, FG-TIDA-WG1-003](https://tida-datatracker.org/doc/fg-tida-contribution-15/) |
 | Status | Proposed text for Deliverable 2, for the Paris meeting, 30 November to 1 December 2026; not yet adopted |
 | Published site | https://kingyewchoo.github.io/attestation-results-at-the-commitment-point/ |
 
