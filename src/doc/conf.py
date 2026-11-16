@@ -35,7 +35,7 @@ extensions = ['sphinxcontrib.httpdomain','sphinxcontrib.plantuml','sphinxcontrib
 import os as _os
 plantuml = _os.environ.get("PLANTUML", "plantuml")
 plantuml_output_format = 'svg'
-templates_path = ['_templates']
+templates_path = ['../theme/_templates']
 html_js_files = [
     "osia-sidebar.js",
 ]
@@ -98,7 +98,7 @@ rst_prolog = '''
 #
 # HTML Output Configuration
 #
-html_static_path = ['_static', 'images']
+html_static_path = ['_static', 'images', '../theme/_static']
 html_css_files = [
     #'custom.css',
     'osia-furo.css',
